@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .main
+        #texts
+        #messLine
+            input(type="text", placeholder="Write Massenge")
+            button#send: img(src="/images/paper-plane.svg", alt="#")
+
+block script
+    script(src="/javascripts/index.js")
