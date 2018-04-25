@@ -2,10 +2,12 @@ extends layout
 
 block content
     .main
-        #texts
+        .flex-handler
+            #texts
         #messLine
-            input(type="text", placeholder="Write Massenge")
+            input#textToSend(type="text", placeholder="Write Massenge", data-emojiable="true")
             button#send: img(src="/images/paper-plane.svg", alt="#")
 
 block script
     script(src="/javascripts/index.js")
+        //script(src="http://cdn.rawgit.com/ashleighy/emoji.js/master/emoji.js.js")

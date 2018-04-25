@@ -10,8 +10,29 @@ a
   flex-direction: column
   height: 70%
 
+  .flex-handler
+    display: flex
+    //flex-grow: 1
+    flex-direction: column-reverse
+    //align-items: end
+    //justify-items: end
+    //justify-content: flex-end
+    height: 85vh
+
   #texts
-    flex-grow: 1
+    flex-grow: 0
+    display: grid
+    //margin-top: auto
+    margin-bottom: 5px
+    grid-template-columns: 50px 10% auto
+    overflow: auto
+
+    > div
+      text-align: center
+
+    > .mess
+      text-align: left
+      padding: 0 10px
 
   #messLine
     display: flex
